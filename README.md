@@ -93,3 +93,16 @@ describe('Grid and Form interaction with usingThenGridForm', () => {
   });
 });
 ```
+
+## extact text value
+```
+  it('should get email using .invoke("prop", "value")', () => {
+    cy.visit('/your-page-url');
+    cy.get('input[name="email"]')
+      .type('test@test.com')
+      .invoke('prop', 'value')
+      .then(email => {
+        expect(email).to.equal('test@test.com');
+      });
+  });
+```
