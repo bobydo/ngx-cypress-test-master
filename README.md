@@ -106,3 +106,47 @@ describe('Grid and Form interaction with usingThenGridForm', () => {
       });
   });
 ```
+
+## different web elements code samples
+'''
+/// <reference types="cypress" />
+describe('Demo of various web elements', () => {
+  it('should interact with checkboxes, radios, date pickers, dropdowns, tables, popups, and assertions', () => {
+    cy.visit('/your-page-url');
+
+    // Checkboxes and Radio Buttons
+    cy.get('input[type="checkbox"][name="subscribe"]').check().should('be.checked');
+    cy.get('input[type="radio"][value="option1"]').check().should('be.checked');
+
+    // Web Date Pickers (part 1)
+    cy.get('input[type="date"]').type('2025-07-27').should('have.value', '2025-07-27');
+
+    // Web Date Pickers (part 2)
+    cy.get('.datepicker-toggle').click();
+    cy.get('.datepicker-day[data-day="27"]').click();
+    cy.get('input[type="date"]').should('have.value', '2025-07-27');
+
+    // Lists and Dropdowns
+    cy.get('select[name="country"]').select('Canada').should('have.value', 'Canada');
+    cy.get('ul.list-items > li').contains('Item 3').click();
+
+    // Web Tables (part 1)
+    cy.get('table tbody tr').eq(0).find('td').eq(1).should('contain.text', 'John Doe');
+
+    // Web Tables (part 2)
+    cy.get('table tbody tr').eq(1).find('button.edit-row').click();
+
+    // PopUps and ToolTips
+    cy.on('window:alert', (str) => {
+      expect(str).to.equal('This is an alert!');
+    });
+    cy.get('.tooltip-trigger').trigger('mouseover');
+    cy.get('.tooltip-content').should('be.visible').and('contain', 'Tooltip text');
+
+    // Cypress Assertions
+    cy.get('.success-message').should('be.visible');
+    cy.get('.error-message').should('contain.text', 'Invalid credentials');
+    cy.get('button.submit').should('have.class', 'btn-primary');
+  });
+});
+'''
