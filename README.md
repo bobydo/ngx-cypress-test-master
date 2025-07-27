@@ -60,4 +60,36 @@ cy.contains('button', 'Submit')        // Find the button with text "Submit"
   .parents('form')                     // Get its parent form
   .find('input[name="email"]')         // Find the email input inside the form
   .should('be.visible');               // Assert that the input is visible
+
+//default is 4 seconds asynchronous waiting
+cy.get('input[name="email"]', { timeout: 10000 }).should('be.visible'); // 10 seconds
+```
+
+## Cypress .then() is similar to JavaScript Promises. 
+- it allows you to access the resolved value of a Cypress command and perform further actions
+- just like chaining with Promises in Playwright.
+```
+/// <reference types="cypress" />
+
+function usingThenGridForm(gridSelector, formSelector, username, password) {
+  cy.get(gridSelector).then(grid => {
+    // Interact with the grid, e.g., select the first row
+    const firstRow = grid.find('tr').eq(0);
+    cy.wrap(firstRow).click();
+
+    cy.get(formSelector).then(form => {
+      // Fill both username and password fields
+      cy.wrap(form).find('input[name="username"]').type(username);
+      cy.wrap(form).find('input[name="password"]').type(password);
+      cy.wrap(form).find('button[type="submit"]').click();
+    });
+  });
+}
+
+describe('Grid and Form interaction with usingThenGridForm', () => {
+  it('should fill username and password and submit the form', () => {
+    cy.visit('/your-page-url');
+    usingThenGridForm('.data-grid', '.edit-form', 'testuser', 'testpass');
+  });
+});
 ```
