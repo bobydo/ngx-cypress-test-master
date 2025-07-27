@@ -23,3 +23,6 @@ cypress.config.react.ts
 cypress.config.vue.ts
 ```
 npx cypress run --config-file cypress.config.react.ts
+
+## Config skipped 2 folders, so one file shows up only
+![Skip folders](Readme/SkipFolders.png)
