@@ -51,3 +51,13 @@ npx cypress run --config-file cypress.config.react.ts
 ## SelectorsHub tool for inspecting web element
 ![SelectorsHub](Readme/SelectorsHub.png)
 
+## Suppose want to find a button labeled "Submit" 
+- inside a form, check its parent form, 
+- then find an input inside that form 
+- and assert that it is visible.
+```
+cy.contains('button', 'Submit')        // Find the button with text "Submit"
+  .parents('form')                     // Get its parent form
+  .find('input[name="email"]')         // Find the email input inside the form
+  .should('be.visible');               // Assert that the input is visible
+```
