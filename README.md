@@ -14,4 +14,4 @@ https://enbridge.udemy.com/course/cypress-web-automation-testing-from-zero-to-he
 - npx: Run a locally Node.js based executable package, like npx cypress open
   - choose E2E => Electron => Great! We added the following files to your project
   - match test case
-  - ![Test cases](Readme/MatchTestCase.png)
+    ![Test cases](Readme/MatchTestCase.png)
