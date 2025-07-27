@@ -15,3 +15,11 @@ https://enbridge.udemy.com/course/cypress-web-automation-testing-from-zero-to-he
   - choose E2E => Electron => Great! We added the following files to your project
   - match test case
     ![Test cases](Readme/MatchTestCase.png)
+
+## multiple Config Files Example
+```
+cypress.config.angular.ts
+cypress.config.react.ts
+cypress.config.vue.ts
+```
+npx cypress run --config-file cypress.config.react.ts
