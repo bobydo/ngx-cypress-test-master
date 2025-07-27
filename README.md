@@ -39,3 +39,12 @@ npx cypress run --config-file cypress.config.react.ts
 - Elements placed at the same level side by side are Sibling Elements
 
 ![Web Elements](Readme/WebElements.png)
+
+## add followin reference line to test file
+```
+/// <reference types="cypress" />
+// When you add /// <reference types="cypress" />, 
+// your editor recognizes Cypress types and also Mocha types,
+// since Cypress test syntax is built on top of Mocha and Chai.
+```
+
