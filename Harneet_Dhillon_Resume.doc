@@ -1,0 +1,47 @@
+Harneet Dhillon
+harneet.dhillon2020@gmail.com | linkedin.com/in/harneet-s-dhillon | U.S. Citizen
+
+EDUCATION
+San Jose State University
+M.S. Software Engineering
+May 2026
+GPA 3.70
+
+University of California, Santa Cruz
+B.S. Computer Science | Cum Laude
+June 2024
+GPA 3.81
+
+Relevant Coursework: Data Structures and Algorithms, Data Mining, Distributed Systems, Enterprise Distributed Systems, Foundations of Programming Languages, Mobile App Development, Natural Language Processing, Object-Oriented Programming, Operating Systems, Software Security, Software Engineering Principles, Web Applications, Vector Calculus
+
+TECHNICAL SKILLS
+Python, JavaScript, React, C, C++, Java, HTML, CSS, XML, Git, SQL, Django, Flask, OWASP ZAP, Firebase
+Microservices, iOS/Android App Development, AWS, Agile, Docker, Kubernetes, RabbitMQ, WebGl, Instana
+Jest, JUnit, TypeScript, Vue.js, MongoDB, FastAPI, Google Cloud, Salesforce, BigQuery, Redis, Haskell, Streamlit
+
+PROFESSIONAL EXPERIENCE
+QueryNest: Software Engineer (Jan 2025 – Jan 2025)
+- Designed a Retrieval-Augmented Generation (RAG) pipeline with Redis cache in 24 hours, reducing average query response time from 3 seconds to under 700 ms by caching vectorized document embeddings.
+- Processed and tokenized a 5,000+ page PDF document into vectorized embeddings using LangChain and FastAPI, enabling real-time querying with 99% retrieval accuracy from the document context.
+- Developed a Streamlit-based user interface to dynamically handle up to 1,000 concurrent users, allowing seamless question submission and result visualization with minimal latency.
+
+Cisco: Data Science Intern | Business Intelligence (June 2022 – Sept 2022)
+- Configured data visualizations from highly dimensional Salesforce datasets consisting of 60,000+ partners in 100+ countries using BigQuery, and Tableau to identify top performing partners for the PXP Digital Co-Sell Pilot.
+- Collaborated with Global Partner & Routes to Market Sales and UX Teams to gather and process large datasets for partner analysis using Python Pandas and Excel, contributing to a 30% decrease in customer costs.
+- Tested dynamic metrics dashboards in collaboration with the Workspan Engineering Team to monitor and automate 100% of PXP Digital Co-Sell metrics, resulting in a 70% increase in the team’s productivity.
+
+Cisco: Data Analyst Intern (June 2021 – Sept 2021)
+- Created data visualizations using BigQuery and Tableau to analyze 1M+ lines of Salesforce datasets allowing the New Buying Centers (NBC) team to strategically select potential partners for the new Digital Platform Project.
+- Deployed the initial iteration of the Partner Renewals “Pantry” in collaboration with the CX Renewals Team, enhancing partner engagement by 35% through structured data management and workflow automation.
+- Launched the development of the FY22 Cisco Online Learning Test (COLT), achieving a 100% deployment through structured and organized planning.
+
+PROJECTS
+OpenMP Parallelization and Multithreading | GitHub (Jan 2025 – Mar 2025)
+- Developed a high-performance CSV processing system to handle 10M+ records using a sliding window algorithm in C++, improving data parsing efficiency by 30%.
+- Implemented multi-threading and parallel processing with OpenMP and chunking strategies, achieving a 10 second improvement and 60% reduction in processing time.
+- Refactored data structures from an array of objects to an object of arrays and tuned thread allocation based on hardware capabilities, reducing processing time of the original benchmark from 16 seconds to 6 seconds.
+
+Gun n’ Powder: AI-Enhanced Penetration Testing | GitHub (Nov 2024 – Jan 2025)
+- Built an AI-enhanced penetration testing platform that detects website vulnerabilities using OWASP ZAP, while integrating Google’s Gemini API to help provide actionable security recommendations to enhance threat mitigation.
+- Constructed a full-stack application with React, Django, and PostgreSQL while using CI/CD pipelines with GitHub Actions to ensure automated testing and continuous integration.
+- Optimized AWS EC2 deployment configuration with auto-scaling groups, resulting in a 40% improvement in system throughput and a 35% reduction in resource utilization.

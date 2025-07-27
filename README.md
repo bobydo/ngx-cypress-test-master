@@ -1,5 +1,6 @@
 ## ngx-cypress-test-master 
-https://enbridge.udemy.com/course/cypress-web-automation-testing-from-zero-to-hero
+- https://enbridge.udemy.com/course/cypress-web-automation-testing-from-zero-to-hero
+- https://github.com/bondar-artem/udemy-realworld-app
 
 ## install and run
 - npm install --force
