@@ -48,3 +48,6 @@ npx cypress run --config-file cypress.config.react.ts
 // since Cypress test syntax is built on top of Mocha and Chai.
 ```
 
+## SelectorsHub tool for inspecting web element
+![SelectorsHub](Readme/SelectorsHub.png)
+
