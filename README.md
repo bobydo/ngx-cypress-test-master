@@ -26,3 +26,15 @@ npx cypress run --config-file cypress.config.react.ts
 
 ## Config skipped 2 folders, so one file shows up only
 ![Skip folders](Readme/SkipFolders.png)
+
+## Understanding DOM and terminology Summary:
+- Html DOM consists of: HTML Tags, HTML Attributes and Attribute values
+- “Class” and “ID” are also HTML attribute names
+- “Class” attribute can have several values and each value is separated by space
+- HTML tags usually come in pairs of Opening and Closing tag. Closing tag has the same name and forward slash
+- Value in between angle brackets (>here<) is a plain text
+- Elements above the “key” web element are Parent Elements
+- Elements inside of the “key” web element are Child Elements
+- Elements placed at the same level side by side are Sibling Elements
+
+![Web Elements](Readme/WebElements.png)
