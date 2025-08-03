@@ -150,3 +150,34 @@ describe('Demo of various web elements', () => {
   });
 });
 '''
+
+## create cypress/support/ for refactoring command code class
+
+## overide existing command of cy, for example cy.createUser
+https://docs.cypress.io/api/cypress-api/custom-commands
+```
+Cypress.Commands.add('createUser', (user) => {
+  cy.request({
+    method: 'POST',
+    url: 'https://www.example.com/tokens',
+    body: {
+      email: 'admin_username',
+      password: 'admin_password',
+    },
+  }).then((resp) => {
+    cy.request({
+      method: 'POST',
+      url: 'https://www.example.com/users',
+      headers: { Authorization: 'Bearer ' + resp.body.token },
+      body: user,
+    })
+  })
+})
+
+cy.createUser({
+  id: 123,
+  name: 'Jane Lane',
+})
+```
+
+
