@@ -180,4 +180,10 @@ cy.createUser({
 })
 ```
 
+## API test
+https://conduit.bondaracademy.com/
+
+![FindAPICall](Readme/FindAPICall.png)
+
+
 
