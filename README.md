@@ -151,7 +151,7 @@ describe('Demo of various web elements', () => {
 });
 '''
 
-## create cypress/support/ for refactoring command code class
+## create cypress/support/ for refactoring common code class
 
 ## overide existing command of cy, for example cy.createUser
 https://docs.cypress.io/api/cypress-api/custom-commands
