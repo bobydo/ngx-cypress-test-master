@@ -180,10 +180,12 @@ cy.createUser({
 })
 ```
 
-## API test
-https://conduit.bondaracademy.com/
+## API test (another project)
+- test website https://conduit.bondaracademy.com/
+- https://github.com/bobydo/Cypress-Web-Automation-Testing-from-Zero-to-Hero-API
+- create a user for your testing
+- Find API call ![FindAPICall](Readme/FindAPICall.png)
 
-![FindAPICall](Readme/FindAPICall.png)
 
 
 
